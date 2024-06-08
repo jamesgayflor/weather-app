@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,37 @@
     <!-- Web app Icon -->
     <link rel="shortcut icon" href="./weather_icon.jpg" type="image/x-icon">
     <!-- Style sheet -->
-     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
 </head>
-<body>
+
+<body class="d-flex">
+    <main>
+        <form action="#" class="input-group mb-3 container-md" id="input-container">
+            <input type="text" class="form-control" placeholder="City Name" id="cityName">
+            <button class="btn btn-success" type="submit" id="submitBtn">Search</button>
+        </form>
+
+        <div class="display-container">
+            
+            <p class=""></p>
+            <h2 class=""></h2>
+            <br>
+            <p class=""></p>
+        </div>
+
+        <div class="card" id="card" style="width: 18rem;">
+            <div class="card-body">
+                <h2 class="card-title cityNameDisplay"></h2>
+                <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                <img src="" id="cityIcon">
+                <h6 class="card-text cityTemp"></h6>
+                <a href="#" class="card-link">Card link</a>
+            </div>
+        </div>
+    </main>
     <!-- JS Script -->
     <script src="./script.js"></script>
 </body>
+
 </html>
