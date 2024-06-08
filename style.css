@@ -57,9 +57,9 @@ section::-webkit-scrollbar {
     display: none;
 }
 
-#card {
-    background-color: rgba(34,107,163, 0.6);
-    color: white;
+.cardss {
+    background-color: rgba(34,107,163, 0.6) !important;
+    color: white !important;
 }
 
 #more-forecast-title {
