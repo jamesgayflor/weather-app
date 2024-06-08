@@ -1,23 +1,12 @@
-// const myApiKey = '10718d7858a0613301b510f200a35240';
-
-// // fetching reports for forecast for in an hour
-
-// const apiCallLink = `ttps://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=${myApiKey}`;
-
-// fetch(apiCallLink)
-//     .then(response => response.json())
-//     .then(data => console.log(data))
-//     .catch(error => {
-//         console.log(`Error: ${error}`);
-//     })
-
 let submitBtn = document.querySelector('#input-container');
 let cityName = document.querySelector('#cityName');
 let cityNameDisplay = document.querySelector('.cityNameDisplay');
 let cityDes = document.querySelector('.cityDes');
 let cityTemp = document.querySelector('.cityTemp');
 let cityIcon = document.querySelector('#cityIcon');
-let singleForecastContaier = document.querySelector('#card2');
+let singleForecastContaier = document.querySelector('#singleCard');
+// let viewMoreForecastBtn = document.querySelector('#viewMoreForecast');
+// let viewMoreForecastContainer = document.querySelector('#more-forcast-container');
 
 // API Key
 let myAPIKey = '10718d7858a0613301b510f200a35240';
@@ -28,7 +17,7 @@ submitBtn.addEventListener('submit', e => {
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${myAPIKey}&units=imperial`)
     .then(response => response.json())
     .then(data => {
-        console.log(data);
+        // console.log(data);
         cityNameDisplayValue = `${data['name']}`;
         cityTempValue = `${data['main']['temp']}`;
         cityDesValue = `${data['weather'][0]['description']}`;
@@ -41,4 +30,9 @@ submitBtn.addEventListener('submit', e => {
         singleForecastContaier.style.display = 'block';
     })
     .catch(err => alert("Unknown City!"));
-})
+});
+
+// viewMoreForecastBtn.addEventListener('click', e => {
+//     singleForecastContaier.style.display = 'none';
+//     viewMoreForecastContainer.style.display = 'block';
+// });

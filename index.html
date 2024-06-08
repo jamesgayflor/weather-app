@@ -26,19 +26,20 @@
             <button class="btn btn-success" type="submit" id="submitBtn">Search</button>
         </form>
         <!-- Single forecast -->
-        <div class="card" style="width: 18rem;" id="card2">
+        <div class="card" style="width: 18rem;" id="singleCard">
             <img src="" id="cityIcon">
             <div class="card-body">
                 <p class="card-text"><span class="cityTemp"></span>°C</p>
                 <p class="card-text cityDes"></p>
                 <h4 class="card-title cityNameDisplay"></h4>
-                <a href="#" class="btn btn-primary">View 12days forecast</a>
+                <!-- <a href="#" class="btn btn-primary" id="viewMoreForecast">View 12days forecast</a> -->
             </div>
         </div>
         <!-- Single forecast -->
-         
+
         <!-- Display 12 days weather Focasts -->
-        <section class="container-fluid more-forcast-container">
+        <section class="container-md mb-3" id="more-forcast-container">
+            <h4 id="more-forecast-title">Twelve Days Forecast</h4>
             <div class="row g-2 g-lg-2" id="forcast-parent-container">
                 <div class="col-12 col-sm-3">
                     <div class="col-12" id="card">

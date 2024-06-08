@@ -22,7 +22,7 @@ main::-webkit-scrollbar {
 
 #app-title {
     margin-left: 7%;
-    color: yellow;
+    color: rgba(222, 244, 252, 0.6);
     font-weight: bolder;
 }
 
@@ -30,33 +30,39 @@ main::-webkit-scrollbar {
     margin: auto;
 }
 
+#singleCard {
+    background-color: rgba(34,107,163, 0.6);
+    color: white;
+    margin: auto;
+    display: none;
+}
+#singleCard > img {
+    height:initial;
+    width: initial;
+    margin: auto;
+}
+#singleCard p {
+    margin-bottom:0 !important;
+}
+
+
 section {
     padding: 0 !important;
     overflow-y: scroll;
     overflow-x: hidden;
     display: none;
-    margin-top: 20px;
+    margin-top: 50px;
 }
 section::-webkit-scrollbar {
     display: none;
 }
 
-#card2 {
-    background-color: rgba(34,107,163, 0.6);
-    color: white;
-    margin: auto;
-    display: none;
-}
-#card2 > img {
-    height:initial;
-    width: initial;
-    margin: auto;
-}
-#card2 p {
-    margin-bottom:0 !important;
-}
-
 #card {
     background-color: rgba(34,107,163, 0.6);
     color: white;
+}
+
+#more-forecast-title {
+    color: rgba(222, 244, 252, 0.6);
+    font-weight: bold;
 }
