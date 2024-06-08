@@ -17,6 +17,7 @@ let cityNameDisplay = document.querySelector('.cityNameDisplay');
 let cityDes = document.querySelector('.cityDes');
 let cityTemp = document.querySelector('.cityTemp');
 let cityIcon = document.querySelector('#cityIcon');
+let singleForecastContaier = document.querySelector('#card2');
 
 // API Key
 let myAPIKey = '10718d7858a0613301b510f200a35240';
@@ -24,7 +25,7 @@ let myAPIKey = '10718d7858a0613301b510f200a35240';
 submitBtn.addEventListener('submit', e => {
     e.preventDefault();
     // ---
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${myAPIKey}`)
+    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${myAPIKey}&units=imperial`)
     .then(response => response.json())
     .then(data => {
         console.log(data);
@@ -37,6 +38,7 @@ submitBtn.addEventListener('submit', e => {
         cityTemp.innerHTML = cityTempValue;
         cityDes.innerHTML = cityDesValue;
         cityIcon.src = cityIconValue;
+        singleForecastContaier.style.display = 'block';
     })
     .catch(err => alert("Unknown City!"));
 })

@@ -10,32 +10,149 @@
     <!-- Style sheet -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+        rel="stylesheet">
 </head>
 
-<body class="d-flex">
+<body>
     <main>
+        <h4 id="app-title">Sheke's Weather<span><br>(<i>City Forecast</i>)</span>
+        </h4>
         <form action="#" class="input-group mb-3 container-md" id="input-container">
             <input type="text" class="form-control" placeholder="City Name" id="cityName">
             <button class="btn btn-success" type="submit" id="submitBtn">Search</button>
         </form>
-
-        <div class="display-container">
-            
-            <p class=""></p>
-            <h2 class=""></h2>
-            <br>
-            <p class=""></p>
-        </div>
-
-        <div class="card" id="card" style="width: 18rem;">
+        <!-- Single forecast -->
+        <div class="card" style="width: 18rem;" id="card2">
+            <img src="" id="cityIcon">
             <div class="card-body">
-                <h2 class="card-title cityNameDisplay"></h2>
-                <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
-                <img src="" id="cityIcon">
-                <h6 class="card-text cityTemp"></h6>
-                <a href="#" class="card-link">Card link</a>
+                <p class="card-text"><span class="cityTemp"></span>°C</p>
+                <p class="card-text cityDes"></p>
+                <h4 class="card-title cityNameDisplay"></h4>
+                <a href="#" class="btn btn-primary">View 12days forecast</a>
             </div>
         </div>
+        <!-- Single forecast -->
+         
+        <!-- Display 12 days weather Focasts -->
+        <section class="container-fluid more-forcast-container">
+            <div class="row g-2 g-lg-2" id="forcast-parent-container">
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <!-- --------- -->
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <!-- --------- -->
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="col-12" id="card">
+                        <h2 class="card-title cityNameDisplay"></h2>
+                        <h4 class="card-subtitle mb-2 text-body-secondary cityDes"></h4>
+                        <img src="" id="cityIcon">
+                        <h6 class="card-text cityTemp"></h6>
+                        <a href="#" class="card-link">Card link</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
     <!-- JS Script -->
     <script src="./script.js"></script>

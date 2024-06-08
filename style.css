@@ -1,27 +1,62 @@
 body {
-    font-family:  "Nunito", sans-serif;
+    font-family:  "Nunito", Georgia, 'Times New Roman', Times, serif;
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), url('./bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     background-position: center;
+    align-content: center;
 }
 main{
     height: 90%;
-    margin: auto;
     width: 95%;
-}
-#input-container, .display-container {
-    text-align: center;
-    padding: 0;
     margin: auto;
+    text-align: left;
     color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
-#card {
-    margin: auto;
-    width: 95% !important;
+main::-webkit-scrollbar {
+    display: none;
 }
 
-/* #submitBtn {
+#app-title {
+    margin-left: 7%;
+    color: yellow;
+    font-weight: bolder;
+}
+
+#input-container, section {
+    margin: auto;
+}
+
+section {
+    padding: 0 !important;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: none;
+    margin-top: 20px;
+}
+section::-webkit-scrollbar {
+    display: none;
+}
+
+#card2 {
+    background-color: rgba(34,107,163, 0.6);
     color: white;
-} */
+    margin: auto;
+    display: none;
+}
+#card2 > img {
+    height:initial;
+    width: initial;
+    margin: auto;
+}
+#card2 p {
+    margin-bottom:0 !important;
+}
+
+#card {
+    background-color: rgba(34,107,163, 0.6);
+    color: white;
+}
