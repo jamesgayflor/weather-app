@@ -20,12 +20,16 @@
 <body>
     <main>
         <h4 id="app-title">Sheke's Weather<span><br>(<i>City Forecast</i>)</span>
-        </h4>
+        </h4> <!--App Logo-->
+
+        <!-- City Input Form Section -->
         <form action="#" class="input-group mb-3 container-md" id="input-container">
             <input type="text" class="form-control" placeholder="City Name" id="cityName">
             <button class="btn btn-success" type="submit" id="submitBtn">Search</button>
         </form>
-        <!-- Single forecast -->
+        <!-- City Input Form Section Ends-->
+
+        <!-- Single forecast Display Begin-->
         <div style="width: 18rem;" id="singleCard">
             <img src="data:," class="WeatherIcon" alt="weather Icon">
             <div class="card-body">
@@ -35,7 +39,7 @@
                 <!-- <a href="#" class="btn btn-primary" id="viewMoreForecast">View 12days forecast</a> -->
             </div>
         </div>
-        <!-- Single forecast -->
+        <!-- Single forecast Display End-->
 
         <!-- Display 12 days weather Focasts -->
         <section class="container-md mb-3" id="more-forcast-container">
@@ -141,6 +145,7 @@
                 </div>
             </div>
         </section>
+        <!-- Display 12 days weather Focasts -->
 
     </main>
     <!-- JS Script -->

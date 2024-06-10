@@ -1,4 +1,4 @@
-let submitBtn = document.querySelector('#input-container');
+let searchBtn = document.querySelector('#input-container');
 let cityName = document.querySelector('#cityName');
 let cityNameDisplay = document.querySelector('.cityNameDisplay');
 let cityDes = document.querySelector('.cityDes');
@@ -11,7 +11,9 @@ let singleForecastContaier = document.querySelector('#singleCard');
 // API Key
 let myAPIKey = '10718d7858a0613301b510f200a35240';
 
-submitBtn.addEventListener('submit', e => {
+
+// Event Caller
+searchBtn.addEventListener('submit', e => {
     e.preventDefault();
     // ---
     fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${myAPIKey}&units=imperial`)
