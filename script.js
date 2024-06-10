@@ -11,12 +11,12 @@ let singleForecastContaier = document.querySelector('#singleCard');
 // API Key
 let myAPIKey = '10718d7858a0613301b510f200a35240';
 
-
+let keyValue = "dddd"
 // Event Caller
 searchBtn.addEventListener('submit', e => {
     e.preventDefault();
     // ---
-    fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cityName.value}&appid=${myAPIKey}&units=imperial`)
+    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName.value}&appid=${myAPIKey}&units=imperial`)
     .then(response => response.json())
     .then(data => {
         // console.log(data);
