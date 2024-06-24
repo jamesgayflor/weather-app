@@ -19,7 +19,7 @@ searchBtn.addEventListener('submit', e => {
     e.preventDefault();
     forecast_parent_container.innerHTML = '';
     // Current Weather Report (A day)
-    fetch(`http://api.weatherapi.com/v1/current.json?key=82dcf5919a8f409fbee220445242306&q=${cityName.value}&aqi=no`)
+    fetch(`https://api.weatherapi.com/v1/current.json?key=82dcf5919a8f409fbee220445242306&q=${cityName.value}&aqi=no`)
         .then(city_response => city_response.json())
         .then(city_data => {
             cityNameDisplayValue = `${city_data.location.name}`;
