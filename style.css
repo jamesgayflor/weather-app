@@ -21,7 +21,7 @@ main::-webkit-scrollbar {
 }
 
 #app-title {
-    margin-left: 7%;
+    margin-left: 5%;
     color: rgba(222, 244, 252, 0.6);
     font-weight: bolder;
 }
@@ -34,8 +34,25 @@ main::-webkit-scrollbar {
     background-color: rgba(34,107,163, 0.6);
     color: white;
     margin: auto;
+    width: 18rem;
     display: none;
 }
+
+#card-body{
+    text-align: left; 
+}
+
+#display-12-btn-container {
+    text-align: center;
+    margin-top: 20px;
+    display: none;
+    color: white;
+}
+#display-12-btn-container > button {
+    color: white;
+    background-color: rgba(34,107,163, 0.6);
+}
+
 #singleCard > img {
     height:initial;
     width: initial;
