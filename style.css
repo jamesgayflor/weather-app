@@ -77,6 +77,9 @@ section::-webkit-scrollbar {
 .cardss {
     background-color: rgba(34,107,163, 0.6) !important;
     color: white !important;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    border-radius: 25px;
 }
 
 #more-forecast-title {

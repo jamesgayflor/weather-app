@@ -66,7 +66,7 @@ view_more_forecast_btn.addEventListener('click', () => {
                 html_template = `
                 <div class="col-12 col-sm-4">
                     <div class="col-12 cardss">
-                        <img src="${day.day.condition.icon}" class="WeatherIcon" alt="weather Icon">
+                        <img src="https:${day.day.condition.icon}" class="WeatherIcon" alt="weather Icon">
                         <p class="card-text"><span class="cityTemp">${day.day.maxtemp_c}</span>°C</p>
                         <p class="card-text cityDes">${day.day.condition.text}</p>
                         
