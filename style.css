@@ -34,8 +34,9 @@ main::-webkit-scrollbar {
     background-color: rgba(34,107,163, 0.6);
     color: white;
     margin: auto;
-    width: 18rem;
+    width: 20rem;
     display: none;
+    border-radius: 20px;
 }
 
 #card-body{
