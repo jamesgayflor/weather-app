@@ -14,10 +14,6 @@ let forecast_parent_container = document.querySelector('#forcast-parent-containe
 const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 const days_of_the_Week = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 
-// API Key
-let myAPIKey = '10718d7858a0613301b510f200a35240';
-let myAPIKey2 = '586e892d11416decdfe57e82aaf5b876';
-
 // Event Caller
 searchBtn.addEventListener('submit', e => {
     e.preventDefault();
